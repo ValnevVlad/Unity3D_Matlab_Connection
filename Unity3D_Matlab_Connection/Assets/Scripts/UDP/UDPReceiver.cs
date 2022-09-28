@@ -56,6 +56,11 @@ public class UDPReceiver : MonoBehaviour
                     _Observer.OnDataReceived(values);
 
                 Debug.Log(">>>>");
+
+                for (int i=0; i <= values.Length-1; i++)
+                {
+                    Debug.Log(values[i]);
+                }
             }
             catch (Exception err)
             {
